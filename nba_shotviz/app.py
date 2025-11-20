@@ -208,6 +208,23 @@ if st.session_state.player_df is None:
             """
         )
 
+        st.markdown(
+            """
+            ### Future improvements
+            
+            In the future, we’d love to grow this tool beyond a single-player sandbox. 
+            High-priority upgrades include head-to-head player comparison views, a more robust 
+            clutch-only filter that incorporates score and game context, richer shot-trajectory 
+            physics calibrated to real tracking data, and a shot profile summary panel that turns 
+            the heatmap into quick takeaways. Longer term, we’re also excited about live-updating 
+            views that plug into game logs so the visualization evolves as a player shoots. On the 
+            quality-of-life side, we’re exploring smaller enhancements like saving common filter 
+            presets, exporting or sharing a chart with one click, a true full-screen mode for 
+            presentations, and subtle team branding elements such as logos tied to the selected season.
+            """
+        )
+
+
 
     with tabs[2]:
         st.header("Filters")
@@ -460,6 +477,22 @@ with tabs[1]:
 
         Our goal is to make advanced shot data feel **visual, interactive, and fun**, 
         without losing the analytical precision under the hood.
+        """
+    )
+    
+    st.markdown(
+        """
+        ### Future improvements
+        
+        In the future, we’d love to grow this tool beyond a single-player sandbox. 
+        High-priority upgrades include head-to-head player comparison views, a more robust 
+        clutch-only filter that incorporates score and game context, richer shot-trajectory 
+        physics calibrated to real tracking data, and a shot profile summary panel that turns 
+        the heatmap into quick takeaways. Longer term, we’re also excited about live-updating 
+        views that plug into game logs so the visualization evolves as a player shoots. On the 
+        quality-of-life side, we’re exploring smaller enhancements like saving common filter 
+        presets, exporting or sharing a chart with one click, a true full-screen mode for 
+        presentations, and subtle team branding elements such as logos tied to the selected season.
         """
     )
 
