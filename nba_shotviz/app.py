@@ -400,11 +400,11 @@ with tabs[0]:
         logo_urls = [f"https://cdn.nba.com/logos/nba/{tid}/global/L/logo.svg" for tid in team_ids]
 
         if len(logo_urls) <= 1:
-            logo_size = 90
+            logo_size = 150
         elif len(logo_urls) == 2:
-            logo_size = 70
+            logo_size = 120
         else:
-            logo_size = 55
+            logo_size = 90
 
         st.markdown(
             """
