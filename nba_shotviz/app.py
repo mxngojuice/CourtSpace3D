@@ -391,8 +391,35 @@ with tabs[0]:
     col1, col2 = st.columns([0.75, 0.25])
 
     with col2:
+      # headshot
         if headshot_url:
-            st.image(headshot_url, width=130)
+            st.image(headshot_url, width=150)
+
+        # logo
+        team_ids = sorted(player_df["TEAM_ID"].dropna().unique().tolist())
+        logo_urls = [f"https://cdn.nba.com/logos/nba/{tid}/global/L/logo.svg" for tid in team_ids]
+
+        if len(logo_urls) <= 1:
+            logo_size = 90
+        elif len(logo_urls) == 2:
+            logo_size = 70
+        else:
+            logo_size = 55
+
+        st.markdown(
+            """
+            <div style="display:flex; flex-direction:column; align-items:flex-end; margin-top:10px;">
+            """,
+            unsafe_allow_html=True,)
+
+        for url in logo_urls:
+            st.markdown(
+                f"""
+                <img src="{url}" width="{logo_size}" style="margin:4px 0;" />
+                """,
+                unsafe_allow_html=True)
+
+        st.markdown("</div>", unsafe_allow_html=True)
 
     with col1:
         if df_filtered.empty:
