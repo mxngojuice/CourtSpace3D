@@ -71,7 +71,7 @@ with st.sidebar.form("dataset_picker"):
 min_i = available_seasons.index(season_min)
 max_i = available_seasons.index(season_max)
 if min_i > max_i:
-    st.error("🚫 Invalid season range: Season (min) must be earlier than Season (max).")
+    st.error("Invalid season range: Season (min) must be earlier than Season (max).")
     st.stop()
 
 selected_seasons = available_seasons[min_i : max_i + 1]
