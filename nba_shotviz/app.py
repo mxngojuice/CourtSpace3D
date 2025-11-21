@@ -219,8 +219,7 @@ if st.session_state.player_df is None:
             the heatmap into quick takeaways. Longer term, we’re also excited about live-updating 
             views that plug into game logs so the visualization evolves as a player shoots. On the 
             quality-of-life side, we’re exploring smaller enhancements like saving common filter 
-            presets, exporting or sharing a chart with one click, a true full-screen mode for 
-            presentations, and subtle team branding elements such as logos tied to the selected season.
+            presets and exporting/sharing a chart with one click.
             """
         )
 
@@ -518,10 +517,10 @@ with tabs[1]:
         the heatmap into quick takeaways. Longer term, we’re also excited about live-updating 
         views that plug into game logs so the visualization evolves as a player shoots. On the 
         quality-of-life side, we’re exploring smaller enhancements like saving common filter 
-        presets, exporting or sharing a chart with one click, a true full-screen mode for 
-        presentations, and subtle team branding elements such as logos tied to the selected season.
+        presets and exporting/sharing a chart with one click.
         """
     )
+    
 
 
 with tabs[2]:
