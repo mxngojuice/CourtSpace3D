@@ -3,4 +3,4 @@ pandas
 plotly
 nba_api
 numpy
-
+kaleido
